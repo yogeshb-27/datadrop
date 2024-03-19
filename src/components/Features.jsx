@@ -3,20 +3,20 @@ import React from "react";
 const Features = () => {
   const features = [
     {
-      iconClass: "bx bx-search bg-danger text-white p-2 rounded",
-      title: "Advanced Search",
-      description: "Efficiently search for GitHub users ",
+      iconClass: "bx bx-lock bg-danger text-white p-2 rounded",
+      title: "Password Protection",
+      description: "Secure your files with password protection.",
     },
     {
-      iconClass: "bx bx-info-circle bg-success text-white p-2 rounded",
-      title: "User Details",
-      description: "View detailed information about GitHub users",
+      iconClass: "bx bx-cloud-upload bg-success text-white p-2 rounded",
+      title: "File Upload",
+      description: "Easily upload files up to 15 MB in size.",
     },
     {
-      iconClass: "bx bx-code-alt bg-primary text-white p-2 rounded",
-      title: "Repository Details",
+      iconClass: "bx bx-time bg-primary text-white p-2 rounded",
+      title: "Automatic Deletion",
       description:
-        "Explore repositories with details such as languages used, stars, and forks.",
+        "Files are automatically deleted from the server after 24 hours.",
     },
     {
       iconClass: "bx bx-file-blank bg-warning text-white p-2 rounded",

@@ -19,6 +19,29 @@ export default function Register() {
 
   async function register(ev) {
     ev.preventDefault();
+    // Check if password is at least 8 characters long
+    if (password.length < 8) {
+      toast.error("Password must be at least 8 characters.");
+      return;
+    }
+
+    // Check if password contains at least 1 letter
+    if (!/[A-Z]/.test(password)) {
+      toast.error("Password must contain a Capital letter.");
+      return;
+    }
+
+    // Check if password contains at least 1 digit
+    if (!/\d/.test(password)) {
+      toast.error("Password must contain a digit.");
+      return;
+    }
+
+    // Check if password contains at least 1 special character
+    if (!/[!@#$%^&*]/.test(password)) {
+      toast.error("Password must contain a special character.");
+      return;
+    }
     try {
       const response = await axios.post(
         ` ${import.meta.env.VITE_API_URL}/auth/register`,

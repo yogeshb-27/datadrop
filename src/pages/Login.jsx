@@ -68,6 +68,12 @@ export default function Login() {
               onClick={handleShowPassword}
             ></i>
           </div>
+          <Link
+            to="/forgot-password"
+            className="text-primary text-decoration-none ms-2"
+          >
+            <small> Forgot Password ?</small>
+          </Link>
           <div>
             <button type="submit" className="btn btn-primary w-100 my-3">
               Log In
